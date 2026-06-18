@@ -37,7 +37,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"eventId\": \"550e8400-e29b-41d4-a716-446655440000\",\n  \"eventType\": \"alert.created\",\n  \"alertId\": \"ALT-2026-05-19-001\",\n  \"correlationId\": \"COR-2026-05-19-001\",\n  \"severity\": \"HIGH\",\n  \"timestamp\": \"2026-05-19T10:30:00Z\",\n  \"payload\": {\n    \"title\": \"Truy cập trái phép được phát hiện\",\n    \"message\": \"Cố gắng truy cập không được phép\",\n    \"source\": \"access-gate-01\"\n  },\n  \"channels\": [\"telegram\", \"email\", \"app\"]\n}"
+              "raw": "{\n  \"eventId\": \"550e8400-e29b-41d4-a716-446655440000\",\n  \"eventType\": \"alert.created\",\n  \"alertId\": \"6644f568-85df-4913-b959-50df1616d58b\",\n  \"correlationId\": \"80cddcc0-72e8-41da-8425-22a263f11254\",\n  \"source\": \"core-business-service\",\n  \"severity\": \"HIGH\",\n  \"alertVersion\": 1,\n  \"occurredAt\": \"2026-05-19T10:30:00Z\",\n  \"data\": {\n    \"title\": \"Truy cập trái phép được phát hiện\",\n    \"message\": \"Cố gắng truy cập không được phép\",\n    \"source\": \"access-gate-01\"\n  },\n  \"channels\": [\"telegram\", \"email\", \"app\"]\n}"
             },
             "url": "{{baseUrl}}/events/alert.created"
           },
@@ -63,7 +63,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"eventId\": \"550e8400-e29b-41d4-a716-446655440002\",\n  \"eventType\": \"alert.escalated\",\n  \"alertId\": \"ALT-2026-05-19-001\",\n  \"correlationId\": \"COR-2026-05-19-001\",\n  \"severity\": \"CRITICAL\",\n  \"timestamp\": \"2026-05-19T10:35:00Z\",\n  \"payload\": {\n    \"title\": \"CẢNH BÁO NGHIÊM TRỌNG\",\n    \"message\": \"Nhiều cố gắng xâm nhập liên tiếp\",\n    \"source\": \"access-gate-01\"\n  },\n  \"channels\": [\"telegram\", \"email\", \"app\", \"sms\"]\n}"
+              "raw": "{\n  \"eventId\": \"550e8400-e29b-41d4-a716-446655440002\",\n  \"eventType\": \"alert.escalated\",\n  \"alertId\": \"6644f568-85df-4913-b959-50df1616d58b\",\n  \"correlationId\": \"80cddcc0-72e8-41da-8425-22a263f11254\",\n  \"source\": \"core-business-service\",\n  \"severity\": \"CRITICAL\",\n  \"alertVersion\": 2,\n  \"occurredAt\": \"2026-05-19T10:35:00Z\",\n  \"data\": {\n    \"title\": \"CẢNH BÁO NGHIÊM TRỌNG\",\n    \"message\": \"Nhiều cố gắng xâm nhập liên tiếp\",\n    \"source\": \"access-gate-01\"\n  },\n  \"channels\": [\"telegram\", \"email\", \"app\", \"sms\"]\n}"
             },
             "url": "{{baseUrl}}/events/alert.escalated"
           },
@@ -84,7 +84,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"eventId\": \"550e8400-e29b-41d4-a716-446655440003\",\n  \"eventType\": \"alert.resolved\",\n  \"alertId\": \"ALT-2026-05-19-001\",\n  \"correlationId\": \"COR-2026-05-19-001\",\n  \"severity\": \"HIGH\",\n  \"timestamp\": \"2026-05-19T11:00:00Z\",\n  \"payload\": {\n    \"title\": \"Cảnh báo đã được giải quyết\",\n    \"message\": \"Vụ xâm nhập đã được xử lý\",\n    \"source\": \"access-gate-01\"\n  },\n  \"channels\": [\"telegram\", \"email\", \"app\"]\n}"
+              "raw": "{\n  \"eventId\": \"550e8400-e29b-41d4-a716-446655440003\",\n  \"eventType\": \"alert.resolved\",\n  \"alertId\": \"6644f568-85df-4913-b959-50df1616d58b\",\n  \"correlationId\": \"80cddcc0-72e8-41da-8425-22a263f11254\",\n  \"source\": \"core-business-service\",\n  \"severity\": \"HIGH\",\n  \"alertVersion\": 3,\n  \"occurredAt\": \"2026-05-19T11:00:00Z\",\n  \"data\": {\n    \"title\": \"Cảnh báo đã được giải quyết\",\n    \"message\": \"Vụ xâm nhập đã được xử lý\",\n    \"source\": \"access-gate-01\"\n  },\n  \"channels\": [\"telegram\", \"email\", \"app\"]\n}"
             },
             "url": "{{baseUrl}}/events/alert.resolved"
           },
@@ -147,7 +147,7 @@
           "request": {
             "method": "POST",
             "header": [ { "key": "Content-Type", "value": "application/json" }, { "key": "Authorization", "value": "Bearer {{authToken}}" } ],
-            "body": { "mode": "raw", "raw": "{ \"eventId\": \"550e8400-e29b-41d4-a716-446655440099\", \"eventType\": \"alert.created\", \"alertId\": \"SMOKE-1\", \"correlationId\": \"550e8400-e29b-41d4-a716-446655440099\", \"severity\": \"LOW\", \"timestamp\": \"2026-05-26T06:00:00Z\", \"payload\": { \"title\": \"Smoke\", \"message\": \"Smoke test\", \"source\": \"smoke\" }, \"channels\": [\"app\"] }" },
+            "body": { "mode": "raw", "raw": "{ \"eventId\": \"550e8400-e29b-41d4-a716-446655440099\", \"eventType\": \"alert.created\", \"alertId\": \"6644f568-85df-4913-b959-50df1616d58b\", \"correlationId\": \"550e8400-e29b-41d4-a716-446655440099\", \"source\": \"core-business-service\", \"severity\": \"LOW\", \"alertVersion\": 1, \"occurredAt\": \"2026-05-26T06:00:00Z\", \"data\": { \"title\": \"Smoke\", \"message\": \"Smoke test\", \"source\": \"smoke\" }, \"channels\": [\"app\"] }" },
             "url": "{{baseUrl}}/events/alert.created"
           },
           "event": [ { "listen": "test", "script": { "exec": ["pm.test('Smoke queued', function() { pm.response.to.have.status(202); });"] } } ]
