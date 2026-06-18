@@ -2,15 +2,9 @@ name: Contract + Newman (notify)
 
 on:
   push:
-    paths:
-      - 'lab02-ngocviphacker/**'
-      - 'postman/**'
-      - 'package.json'
+    branches: [ "main" ]
   pull_request:
-    paths:
-      - 'lab02-ngocviphacker/**'
-      - 'postman/**'
-      - 'package.json'
+    branches: [ "main" ]
 
 jobs:
   test-notify:
