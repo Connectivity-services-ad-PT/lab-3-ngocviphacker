@@ -24,10 +24,10 @@ jobs:
         run: npx @stoplight/spectral-cli lint lab02-ngocviphacker/openapi.yaml --ruleset lab02-ngocviphacker/campus-spectral.yaml || true
 
       - name: Start Prism mock
-        run: nohup npm run mock:notify > prism.log 2>&1 &
-
-      - name: Wait for mock health
-        run: npx wait-on http://localhost:4010/health --timeout 30000
+        run: |
+          nohup npm run mock:notify > prism.log 2>&1 &
+          sleep 5
+          cat prism.log
 
       - name: Ensure Newman HTML reporter installed
         run: npm install --no-save newman-reporter-htmlextra@^1 || true
