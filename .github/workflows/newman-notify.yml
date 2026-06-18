@@ -30,7 +30,7 @@ jobs:
         run: npx @stoplight/spectral-cli lint lab02-ngocviphacker/openapi.yaml --ruleset lab02-ngocviphacker/campus-spectral.yaml || true
 
       - name: Start Prism mock
-        run: nohup npx --yes @stoplight/prism-cli mock lab02-ngocviphacker/openapi.yaml -p 4010 > prism.log 2>&1 &
+        run: nohup npm run mock:notify > prism.log 2>&1 &
 
       - name: Wait for mock health
         run: npx wait-on http://localhost:4010/health --timeout 30000
